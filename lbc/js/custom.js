@@ -22,4 +22,27 @@ $(document).ready(function(){
 	        }
 	    }
 	});
+	$('#partner').owlCarousel({
+		items:4,
+		margin:10,
+		nav:false,
+		dots:false,
+		loop:true,
+	    responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            nav:false
+	        },
+	        600:{
+	            items:3,
+	            nav:false
+	        },
+	        1000:{
+	            items:6,
+	            nav:false,
+	            loop:true
+	        }
+	    }
+	});
 });
