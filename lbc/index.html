@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0">
+<meta name="csrf-param" content="_csrf">
+<title>TRƯỜNG CAO ĐẲNG NGHỀ LONG BIÊN</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link href="css/style.all.css" rel="stylesheet">
+<link href="css/slider.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=""><img src="images/logo.png" alt="Cao đẳng nghề long biên" class="img-responsive" /></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Trang chủ</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="gioi-thieu" data-toggle="dropdown">Giới thiệu <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="gioi-thieu">Giới thiệu chung</a></li>
+                                <li><a href="site/cac-net-dac-trung">Các nét đặc trưng</a></li>
+                                <li><a href="site/tam-nhin-su-menh">Tầm nhìn sứ mệnh</a></li>
+                                <li><a href="site/co-so-vat-chat">Cơ sở vật chất</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="dao-tao" data-toggle="dropdown">Đào tạo <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="dao-tao">Nghề đào tạo</a></li>
+                                <li><a href="tin-dao-tao">Tin đào tạo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tuyen-sinh">Tuyển sinh</a></li>
+                        <li><a href="viec-lam">Việc làm</a></li>
+                        <li><a href="goc-sinh-vien">Sinh viên</a></li>
+                        <li><a href="dich-vu">Dịch vụ</a></li>
+                    </ul>
+            </div>    
+        </nav>
+    </header>
+    <section class="banner hidden-xs">
+        <div id="slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class=""></li>
+                <li data-target="#slider" data-slide-to="1" class=""></li>
+                <li data-target="#slider" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="images/banner/banner-1.jpg">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="col-md-6 banner-text">
+                                <h1>TUYỂN SINH 2019</h1>
+                                <div class="banner-desc">
+                                    <p>iên tục tuyển sinh trên toàn quốc, Đào tạo định hướng chuẩn Quốc tế, Phát triển nghề nghiệp cùng doanh nghiệp</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                   <img src="images/banner/banner-2.jpg">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="col-md-6 banner-text">
+                                <h1>MAY THỜI TRANG</h1>
+                                <div class="banner-desc">
+                                    <p>Nghề đào tạo với chi phí 0 đồng, Học thực tiễn - Chắc kỹ năng, Cam kết bố trí việc làm sau khi ra trường</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img src="images/banner/banner-3.jpg">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="col-md-6 banner-text">
+                                <h1>THIẾT KẾ THỜI TRANG</h1>
+                                <div class="banner-desc">
+                                    <p>Nghề nuôi dưỡng đam mê, sáng tạo, Phát triển nghề nghiệp cùng doanh nghiệp, Tiếp cận công nghệ thời trang ứng dụn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+    </section>
+
+    <!-- begin section-course -->
+    <section class="section-course">
+        <div class="container">
+            <h2 class="page-title text-center">CÁC KHÓA HỌC</h2>
+            <div class="courses row">
+                <div class="owl-carousel owl-theme" id="course">
+                    <div class="item imghvr-fade">
+                        <img src="images/course/course2.jpg">
+                        <h3 class="course-title">KT Sửa chữa, lắp ráp máy tính</h3>
+                        <figcaption>
+                          <h3>KT Sửa chữa, lắp ráp máy tính</h3>
+                          <p> Theo thống kê của Bộ Thông tin và & Truyền thông, hiện nay nguồn nhân lực CNTT tại các doanh nghiệp đang thiếu trầm trọng, nhu cầu tuyển dụng trong lĩnh vực CNTT là khoảng 250.000 lao động. Theo hướng quy hoạch nhân lực quốc gia đến năm 2020, Việt Nam cần 1 triệu lao động trong lĩnh vực CNTT. Nghề Sửa chữa và lắp ráp máy tính mới chỉ đáp ứng khoảng 70% thị trường lao động. Sinh viên học nghề này có một cơ hội có việc làm sau khi ra trường. </p>
+                        </figcaption>
+                        <a href="#aaaa"></a>
+                    </div>
+                    <div class="item imghvr-fade">
+                        <img src="images/course/course2.jpg">
+                        <h3 class="course-title">Sửa chữa thiết bị may</h3>
+                        <figcaption>
+                          <h3>Sửa chữa thiết bị may</h3>
+                          <p> Việt Nam là nước đứng thứ hai thế giới về xuất khẩu may mặc, trong đó hơn 30% các doanh nghiệp tại Việt Nam đa phần là các doanh nghiệp liên quan đến may mặc, đó là chưa kể các hộ gia đình chuyên may gia công. Giá thành một chiếc máy may công nghiệp cũng rất cao, giao động từ vài triệu cho đến cả vài chục triệu một máy.</p>
+                        </figcaption>
+                        <a href="#aaaa"></a>
+                    </div>
+                    <div class="item imghvr-fade">
+                        <img src="images/course/course2.jpg">
+                        <h3 class="course-title">Thiết kế thời trang</h3>
+                        <figcaption>
+                          <h3>Thiết kế thời trang</h3>
+                          <p> Theo thống kê của Bộ Thông tin và & Truyền thông, hiện nay nguồn nhân lực CNTT tại các doanh nghiệp đang thiếu trầm trọng, nhu cầu tuyển dụng trong lĩnh vực CNTT là khoảng 250.000 lao động. Theo hướng quy hoạch nhân lực quốc gia đến năm 2020, Việt Nam cần 1 triệu lao động trong lĩnh vực CNTT. Nghề Sửa chữa và lắp ráp máy tính mới chỉ đáp ứng khoảng 70% thị trường lao động. Sinh viên học nghề này có một cơ hội có việc làm sau khi ra trường. </p>
+                        </figcaption>
+                        <a href="#aaaa"></a>
+                    </div>
+                    <div class="item imghvr-fade">
+                        <img src="images/course/course2.jpg">
+                        <h3 class="course-title">May thời trang</h3>
+                        <figcaption>
+                          <h3>May thời trang</h3>
+                          <p> Theo thống kê của Bộ Thông tin và & Truyền thông, hiện nay nguồn nhân lực CNTT tại các doanh nghiệp đang thiếu trầm trọng, nhu cầu tuyển dụng trong lĩnh vực CNTT là khoảng 250.000 lao động. Theo hướng quy hoạch nhân lực quốc gia đến năm 2020, Việt Nam cần 1 triệu lao động trong lĩnh vực CNTT. Nghề Sửa chữa và lắp ráp máy tính mới chỉ đáp ứng khoảng 70% thị trường lao động. Sinh viên học nghề này có một cơ hội có việc làm sau khi ra trường. </p>
+                        </figcaption>
+                        <a href="#aaaa"></a>
+                    </div>
+                    <div class="item imghvr-fade">
+                        <img src="images/course/course2.jpg">
+                        <h3 class="course-title">Quản trị khách sạn</h3>
+                        <figcaption>
+                          <h3>Quản trị khách sạn</h3>
+                          <p> Theo thống kê của Bộ Thông tin và & Truyền thông, hiện nay nguồn nhân lực CNTT tại các doanh nghiệp đang thiếu trầm trọng, nhu cầu tuyển dụng trong lĩnh vực CNTT là khoảng 250.000 lao động. Theo hướng quy hoạch nhân lực quốc gia đến năm 2020, Việt Nam cần 1 triệu lao động trong lĩnh vực CNTT. Nghề Sửa chữa và lắp ráp máy tính mới chỉ đáp ứng khoảng 70% thị trường lao động. Sinh viên học nghề này có một cơ hội có việc làm sau khi ra trường. </p>
+                        </figcaption>
+                        <a href="#aaaa"></a>
+                    </div>
+                    <div class="item imghvr-fade">
+                        <img src="images/course/course2.jpg">
+                        <h3 class="course-title">Kế toán doanh nghiệp</h3>
+                        <figcaption>
+                          <h3>Kế toán doanh nghiệp</h3>
+                          <p> Theo thống kê của Bộ Thông tin và & Truyền thông, hiện nay nguồn nhân lực CNTT tại các doanh nghiệp đang thiếu trầm trọng, nhu cầu tuyển dụng trong lĩnh vực CNTT là khoảng 250.000 lao động. Theo hướng quy hoạch nhân lực quốc gia đến năm 2020, Việt Nam cần 1 triệu lao động trong lĩnh vực CNTT. Nghề Sửa chữa và lắp ráp máy tính mới chỉ đáp ứng khoảng 70% thị trường lao động. Sinh viên học nghề này có một cơ hội có việc làm sau khi ra trường. </p>
+                        </figcaption>
+                        <a href="#aaaa"></a>
+                    </div>
+                    <div class="item imghvr-fade">
+                        <img src="images/course/course2.jpg">
+                        <h3 class="course-title">Hướng dẫn du lịch</h3>
+                        <figcaption>
+                          <h3>Hướng dẫn du lịch</h3>
+                          <p> Theo thống kê của Bộ Thông tin và & Truyền thông, hiện nay nguồn nhân lực CNTT tại các doanh nghiệp đang thiếu trầm trọng, nhu cầu tuyển dụng trong lĩnh vực CNTT là khoảng 250.000 lao động. Theo hướng quy hoạch nhân lực quốc gia đến năm 2020, Việt Nam cần 1 triệu lao động trong lĩnh vực CNTT. Nghề Sửa chữa và lắp ráp máy tính mới chỉ đáp ứng khoảng 70% thị trường lao động. Sinh viên học nghề này có một cơ hội có việc làm sau khi ra trường. </p>
+                        </figcaption>
+                        <a href="#aaaa"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section course -->
+
+    <!-- begin section about -->
+    <section class="section-about">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="about row">
+                <div class="col-md-12">
+                    <h2 class="page-title text-center">Tại sao lại là lbc - cao đẳng nghề long biên</h2>
+                </div>
+                <div class="col-md-3 about-icon">
+                    <div class="thumbnail">
+                        <a href=""><img src="images/icon/company.png" alt=""></a>
+                        <h3 class="text-center">
+                            Mô hình trường <br />
+                            bên cạnh doanh nghiệp
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-3 about-icon">
+                    <div class="thumbnail">
+                        <a href=""><img src="images/icon/quocte.png" alt=""></a>
+                        <h3 class="text-center">
+                            Định hướng <br /> chuẩn quốc tế
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-3 about-icon">
+                    <div class="thumbnail">
+                        <a href=""><img src="images/icon/hoatdong.png" alt=""></a>
+                        <h3 class="text-center">
+                            Hoạt động cho sinh viên <br /> phong phú
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-3 about-icon">
+                    <div class="thumbnail">
+                        <a href=""><img src="images/icon/dola.png" alt=""></a>
+                        <h3 class="text-center">
+                            Chi phí học <br />0 đồng
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-videos">
+        <div class="container">
+            <h2 class="page-title text-center">Video nổi bật</h2>
+            <div class="videos row">
+                <div class="col-md-9">
+                    <h2 class="sub-title">Giới thiệu về trường</h2>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/8oj1MnsXEKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="sub-title">Video khác</h2>
+                    <div class="other-video">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course2.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Giới thiệu về trường Text goes here</h4>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course3.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Kế toán doanh nghiệp</h4>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course3.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Giới thiệu về trường</h4>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course3.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Theo thống kê của Bộ Thông tin và & Truyền thông</h4>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course3.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Theo thống kê của Bộ Thông tin và & Truyền thông</h4>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course3.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Theo thống kê của Bộ Thông tin </h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-blog">
+        <div class="container">
+            <div class="blogs row">
+                <div class="col-md-4">
+                    <h2 class="sub-title">Tin mới</h2>
+                    <div class="blog-top">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita repellendus ullam nostrum eaque fuga sit mollitia unde quod, quis alias odio eligendi! Odio quam modi asperiores, provident, labore atque aliquid.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Lorem ipsum dolor sit amet,</h4>
+                                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <h2 class="sub-title">Tin đào tạo</h2>
+                    <div class="blog-top">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita repellendus ullam nostrum eaque fuga sit mollitia unde quod, quis alias odio eligendi! Odio quam modi asperiores, provident, labore atque aliquid.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Lorem ipsum dolor sit amet,</h4>
+                                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="sub-title">Tin tuyển sinh</h2>
+                    <div class="blog-top">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita repellendus ullam nostrum eaque fuga sit mollitia unde quod, quis alias odio eligendi! Odio quam modi asperiores, provident, labore atque aliquid.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/course/course4.jpg" alt="Image" width="100">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Lorem ipsum dolor sit amet,</h4>
+                                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
